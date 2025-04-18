@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!--
+    function func_name(parameters){
+        //code
+    }
+    -->
+    <h1>Java Script Functions</h1>
+    <p id="demo"></p>
+    <!----
+    <script>
+        let x=myfunc(4,3,2);
+        document.getElementById('demo').innerHTML=x;
+
+        function myfunc(a,b,c){
+            return a*b;
+        }
+    </script>
+-->
+<!---
+    <script>
+        const x=function (a,b) {return a+b};
+        document.getElementById('demo').innerHTML=x(4,3)
+    </script>
+
+    <h2>function constructor</h2>
+    <h6>functions can be defined using built in javascript function constructor</h6>
+    <p id="demo"></p>
+    <script>
+        const myfunc = new Function("a","b","return a*b");
+        document.getElementById('demo').innerHTML=myfunc(4,3)
+    </script>
+-->
+<!----
+    <p>a self invoking expression will be invoked automatically
+        without being called.but you cannot invoke func declaration
+    </p>
+    <p id="demo1"></p>
+    <script>
+        (
+            function(){
+                document.getElementById('demo1').innerHTML="Hello i called myself";
+            }
+        )();//here the function is called itself by ()
+    </script>
+-->
+<!----
+    <h2>functions are objects</h2>
+    <p>typeof operator which will return functions for functions</p>
+    <p id="demo2"></p>
+    <script>
+        function myfunc(a,b){//parameters
+            return arguments.length;
+        }
+        document.getElementById('demo2').innerHTML=myfunc(4,3,4,4);//arguments
+
+    </script>
+-->
+    <!----->
+    <h1>Arrow Function</h1>
+    <p>arrow functions allows a short syntax for writing function expression</p>
+    <p id="demo3"></p>
+    <script>
+        const x=(x,y)=>x+y;
+        document.getElementById('demo').innerHTML=x(5,10);
+
+    </script>
+-->
+</body>
+</html>

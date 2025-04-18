@@ -1,0 +1,48 @@
+<!--
+what is dom?
+DOM is a W3C -world wide web consortium standard
+which defines a standard for accessing documents.
+
+DOM -Document Object Module
+
+document objects 
+1.document.getElementByID(id)
+2.document.getElementByTagName(name)
+3.document.getElementByClassName(class name)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!---
+    <h2>Java script HTML DOM</h2>
+    <div id="main">
+        <p>finding HTML element by Tag Name</p>
+        <p><b>getElementByTagName</b></p>
+    </div>
+    <p id="demo"></p>
+    <script>
+        const x=document.getElementById('main');
+        const y=x.getElementsByTagName('p');
+
+        document.getElementById('demo').innerHTML='the first paragraph inside main is: '+y[1].innerHTML;
+    </script>
+-->
+<h2>Java script HTML DOM</h2>
+<div id="main">
+    <p class="intro">finding HTML element by Class name</p>
+    <p class="intro"><b>getElementByClassName</b></p>
+</div>
+<p id="demo"></p>
+<script>
+    const x=
+    document.getElementsByClassName('intro');
+    document.getElementById('demo').innerHTML='the first paragraph inside main is: '+x[0].innerHTML;
+</script>
+    
+</body>
+</html>

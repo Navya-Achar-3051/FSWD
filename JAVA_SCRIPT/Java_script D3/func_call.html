@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <!---
+    <h1>Function Call Method</h1>
+    <p id="demo"></p>
+    <script>
+        const person={
+            fullname:function(){
+                return this.firstname + " " + this.lastname;
+            }
+        }
+        const person1={
+            firstname:'navya',
+            lastname:'manoj'
+        }
+        const person2={
+            firstname:'navya',
+            lastname:'shivakumar'
+        }
+        document.getElementById('demo').innerHTML=person.fullname.call(person1);
+    </script>
+-->
+    <!--
+<h1>Function Call by Arguments</h1>
+<p id="demo"></p>
+<script>
+    const person={
+        fullname:function(city,country){
+            return this.firstname + " " + this.lastname+ "," + city + ","+country;
+        }
+    }
+    const person1={
+        firstname:'navya',
+        lastname:'manoj'
+    }
+    const person2={
+        firstname:'navya',
+        lastname:'shivakumar'
+    }
+    document.getElementById('demo').innerHTML=person.fullname.call(person1,"Bengaluru","India");
+</script>
+   --> 
+</body>
+</html>

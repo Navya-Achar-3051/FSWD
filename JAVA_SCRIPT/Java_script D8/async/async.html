@@ -1,0 +1,26 @@
+<!--
+functions running in parallel with other functions are called asynchronous
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Asynchronous</h1>
+    <p id="demo"></p>
+    <script>
+        function mydisplay(some){
+            document.getElementById('demo').innerHTML=some;
+        }
+        function mycal(num1,num2,mycallback){
+            let sum=num1+num2;
+            mycallback(sum);
+        }
+        mycal(5,5,mydisplay);//typically we use callback with async functions itself
+    </script>
+    
+</body>
+</html>

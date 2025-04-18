@@ -1,0 +1,80 @@
+<!---
+A JavaScript Set is a collection of unique values.
+
+Each value can only occur once in a Set.
+
+The values can be of any type, primitive values or objects.
+
+You can create a JavaScript Set by:
+
+Passing an array to new Set()
+Create an empty set and use add() to add values
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<h2>The add() Method</h2>
+
+<p>The add() method adds values to a set:</p>
+
+<p id="demo"></p>
+
+<!--
+<script>
+// Create a Set
+const letters = new Set();
+
+// Add Values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+
+// Display the Size
+document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+</script>
+-->
+<!--
+<script>
+// Create a new Set
+const letters = new Set(["a","b","c"]);
+
+// Does the Set contain "d"?
+answer = letters.has("d");
+document.getElementById("demo").innerHTML = "The answer is " + answer;
+</script>
+-->
+<!--
+<script>
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// List all Elements
+let text = "";
+letters.forEach (function(value) {
+  text += value + "<br>";
+})
+
+document.getElementById("demo").innerHTML = text;
+</script>
+-->
+<!--
+<script>
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// Create an Iterator
+const myIterator = letters.values();
+
+// List all Elements
+let text = "";
+for (const x of myIterator) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+-->
+</body>
+</html>

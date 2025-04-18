@@ -1,0 +1,115 @@
+<!--
+Objects Methods are grouped into:
+1.General
+2.Property MAnagement
+3.Object Protection
+-->
+<!--
+General Method:
+//copies properties from a source object to a target object
+object.assign(target,source)
+
+//creates an object from an existing object
+object.create(object)
+
+//returns an array of key/value pairs of an objects
+object.entires(object)
+
+//create an object from the list of keys/values
+object.fromentries()
+
+//returns an array of keys of an object
+object.keys(object)
+
+//returns an array of values of an object
+object.values(object)
+
+//groups objects elements according to a function
+object.groupBy(object,callback)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="sheet" href="/Object_Methods/general.js">
+</head>
+<body>
+    <h1>Object Methods -General Methods</h1>
+    <p id="demo"></p>
+    <script>
+        /*
+        const fruits=[
+        {name:'apple',quantity:300},
+        {name:'banana',quantity:200},
+        {name:'cherry',quantity:330},
+        {name:'pears',quantity:100}
+        ];
+        //call back function to group elements
+        function mycall({quantity}){
+            return quantity>200?'ok':'low';
+        }
+        //group by ok and low
+        const result=Object.groupBy(fruits,mycall);
+
+        //display results
+        let t="<br>These fruits are Ok: <br>";
+        for (let [x,y] of result.ok.entries()){
+            t+=y.name + " "+ y.quantity+ '<br>';
+        }
+        t+="<br> These fruits are Low : <br>";
+        for (let [x,y] of result.low.entries()){
+            t+=y.name + " " + y.quantity + "<br>"
+        }
+
+        document.getElementById('demo').innerHTML=t;
+        */
+
+        /*
+        const person={
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        //let tx=Object.values(person);
+        let tx=Object.keys(person);
+        document.getElementById('demo').innerHTML=tx;
+        */
+
+        /*
+        const fruits=[
+        ["apple",300],
+        ["pears",900],
+        ["banana",500]
+        ];
+        const myobj=Object.fromEntries(fruits);
+        document.getElementById('demo').innerHTML=myobj.pears;
+        */
+
+
+        /**/
+        // Create Target Object*/
+const person1 = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+  };
+  
+  // Create Source Object
+  const person2 = {firstName: "Anne",lastName: "Smith"};
+  
+  // Assign Source to Target
+  Object.assign(person1, person2);
+  
+  // Display Target
+  let text = Object.entries(person2);
+  document.getElementById("demo").innerHTML = text;
+  
+    </script>
+    
+</body>
+</html>

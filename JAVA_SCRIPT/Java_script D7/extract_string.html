@@ -1,0 +1,85 @@
+<!--
+Extracting String Parts
+There are 3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+<p id="demo"></p>
+<!---
+<script>
+let text = "Apple, Banana, Kiwi";
+//let part = text.slice(5,10);
+//let part=text.substr(7,7);//it extract a part of a string and returns the extarcted part in new string
+document.getElementById("demo").innerHTML = part; 
+</script>
+-->
+<!--
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.substring(7,13);
+</script>
+-->
+<!--Uppercases,lowercases
+<button onclick="myfunc()">click me</button>
+<script>
+    function myfunc(){
+        let text=document.getElementById('demo').innerHTML='navya';//give some text in paragraph tag
+        document.getElementById('demo').innerHTML=text.toUpperCase();
+    }
+</script>
+-->
+<!--Triming
+<script>
+    let text1="   Hello World   ";
+    //let text2=text1.trim();
+    let text2=text1.trimEnd()
+    document.getElementById('demo').innerHTML="Length text1= "+text1.length + "<br> length text2= "+text2.length;
+    //document.getElementById('demo').innerHTML=text2;
+</script>
+-->
+<!--Padding of the string
+<script>
+    let text='5';
+    text=text.padStart(5,'-');//it adds untill it reaches the length
+    //text=text.padEnd(5,);
+    document.getElementById('demo').innerHTML=text;
+</script>
+-->
+<!--Reapeat the string
+<script>
+    let text="Navya Manoj,"
+    let result=text.repeat(4);//specify the times
+    document.getElementById('demo').innerHTML=result;
+</script>
+-->
+<!--Replace of string
+<script>
+    let text="Navya Manoj,"
+    let result=text.replace(/MANOJ/i,'Achar');//old string,new string,/string/i to replace irrespective of cases,/string/g globally replace all
+    document.getElementById('demo').innerHTML=result;
+</script>
+-->
+<!--Spliting of strings
+<script>
+    let text="NAVYA";
+    const arr=text.split("");
+    text="";
+    for(let i=0;i<arr.length;i++){
+        text+=arr[i] + "<br>"
+    }
+    document.getElementById('demo').innerHTML=text;
+</script>
+-->
+
+</body>
+</html>

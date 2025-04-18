@@ -1,0 +1,23 @@
+<!--
+the code inside the function is not executed when the function is defined.
+the code inside the function is executed when the function is invokes
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <H1>Invoking Function as Function</H1>
+    <p id="demo"></p>
+    <script>
+        function myfunc(a,b){
+            return a*b;
+        }
+        document.getElementById('demo').innerHTML=window.myfunc(10,2);
+    </script>
+    
+</body>
+</html>

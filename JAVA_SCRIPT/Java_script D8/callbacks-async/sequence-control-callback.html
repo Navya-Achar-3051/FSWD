@@ -1,0 +1,31 @@
+<!--
+sometimes you would like to have better control over when to execute functions.
+
+suppose u want to do calcultion and then display
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sequence Control</h1>
+    <p>functions are executed in the sequenece they r called</p>
+    <p id="demo"></p>
+    <script>
+        function mydisplay(some){
+            document.getElementById('demo').innerHTML=some;
+        }
+        function mycal(num1,num2){
+            let sum=num1+num2;
+            return sum;
+        }
+        //let result=mycal(5,5);
+        //mydisplay(result);
+
+        mycal(5,5,mydisplay);
+    </script>
+</body>
+</html>

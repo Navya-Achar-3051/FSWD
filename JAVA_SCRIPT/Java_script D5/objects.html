@@ -1,0 +1,53 @@
+<!--
+objects are instance of the class
+
+methods for defining JS objects:
+1.using object literals
+2.using new keyword
+3.using object-constructor
+4.using object.assign()
+5.using object.create()
+6.using object.fromEntries()
+-->
+<!--
+literals is a list of property names:values inside curly braces {}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Objects in JS</h1>
+    <h1>using new() object</h1>
+    <!----->
+    <script>
+        //create empty object
+        const person={};
+
+        //add properties
+        person.firstname='john';
+        person.lastname='franandis';
+        person.age=30;
+        person.loc='germany'
+
+        //display
+        document.getElementById('demo').innerHTML=person.firstname + " " + person.lastname + " is " + person.age +" years old.";
+    </script>
+
+<p id="demo"></p>
+    <script>
+        const person=new Object();
+        person.firstname='john';
+        person.lastname='franandis';
+        person.age=50;
+        person.loc='germany';
+
+        document.getElementById('demo').innerHTML=person.firstname + " " + person.lastname + " is " + person.age +" years old.";
+
+    </script>
+    
+</body>
+</html>

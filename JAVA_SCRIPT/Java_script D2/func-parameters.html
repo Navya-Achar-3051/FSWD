@@ -1,0 +1,62 @@
+<!--
+javascript functions definations do not specify data types for parameters
+Js functions do not perform type checking on the passed arguments
+JS functions do not check the number of arguments recieved
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+</head>
+<body>
+    <h1>Default Parameters</h1>
+    <p id="demo"></p>
+<!---
+    <script>
+        function myfunc(x,y){
+            if(y==undefined){
+                y=2;
+            }
+            return x*y;
+        }
+        document.getElementById('demo').innerHTML=myfunc(8);
+    </script>
+-->
+<!---
+    <p>Rest parameters(...) allows a function to rest an indefinite number of arguments a an array</p>
+    <script>
+        function sum(...arguments){
+            let sum=0;
+            for(let arg of arguments)sum+=arg;
+            return sum;
+        }
+        let x=sum(4,8,9,5,20,19,20,30);
+        document.getElementById('demo').innerHTML=x;
+    </script>
+
+-->
+    <!----
+    <h2>Arguments Object</h2>
+    <p>it is a built in object ,it contains array of arguments used when  the 
+        function was called(invoked)
+    </p>
+    <p id="demo2"></p>
+    <script>
+        function findmax(){
+            let max= -Infinity;
+            for(let i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+    }
+    document.getElementById('demo2').innerHTML=findmax(4,5,6,10,3,20,100,105,200);
+    </script>
+-->
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--
+the apply() method is similar to call() method but with apply() you can write a method
+that can be used on diff objects
+
+difference:
+call() => takes arguments sepratetly
+apply() => takes arguments as an array
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!---
+    <h1>Apply method in Functions</h1>
+    <p id="demo"></p>
+    <script>
+        const person={
+            fullname:function(){
+                return this.firstname + " "+ this.lastname;
+            }
+        }
+        const p1={
+            firstname:'Rahul',
+            lastname:'Gowda'
+        }
+        document.getElementById('demo').innerHTML=person.fullname.apply(p1);
+    </script>
+-->
+<!----->
+    <h1>Apply() method with arguments</h1>
+    <p id="demo"></p>
+    <script>
+        const person={
+            fullname:function(city,country){
+                return this.firstname + " "+ this.lastname+" "+city+" "+country;
+            }
+        }
+        const p1={
+            firstname:'Rahul',
+            lastname:'Gowda'
+        }
+        document.getElementById('demo').innerHTML=person.fullname.apply(p1,['katmandu','Nepal']);
+    </script>
+--> 
+</body>
+</html>

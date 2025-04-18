@@ -1,0 +1,74 @@
+<!--
+A Map holds key-value pairs where the keys can be any datatype.
+
+A Map remembers the original insertion order of the keys.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The new Map Method()</h2>
+
+<p>Creating a map from an array:</p>
+
+<p id="demo"></p>
+<!---
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+</script>
+-->
+
+<!--
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+//document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+-->
+<!--
+<script>
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+let numb = fruits.get("apples");
+document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+
+</script>
+-->
+<!--
+<script>
+    // Create a Map
+    const fruits = new Map([
+      ["apples", 500],
+      ["bananas", 300],
+      ["oranges", 200],
+      ["pears",100]
+    ]);
+    fruits.delete("pears");
+    
+    //document.getElementById("demo").innerHTML = fruits.size;
+    document.getElementById("demo").innerHTML = fruits.has("pears");
+
+    </script>
+-->
+
+</body>
+</html>

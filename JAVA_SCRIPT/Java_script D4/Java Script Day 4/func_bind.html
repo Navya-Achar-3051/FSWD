@@ -1,0 +1,49 @@
+<!---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <H1>Function Bind()</H1>
+    <p>it creates 2 objects (person and member)</p>
+    <p>the member object borrows the fullname method from person </p>
+    <p id="demo"></p>
+    <!----->
+    <script>
+        const person={
+            firstname:"navya",
+            lastname:"achar",
+            fullname: function(){
+                return this.firstname+ " " + this.lastname;
+            }
+        }
+        const member={
+            firstname:"manoj",
+            lastname:"achari"
+        }
+        const member1={
+            firstname:"rahul",
+            lastname:"achari"
+        }
+        let fullname=person.fullname.bind(member1);
+        document.getElementById("demo").innerHTML=fullname();
+    </script>
+
+    <!--
+    <script>
+        const person={
+            firstname:"navya",
+            lastname:"achar",
+            fullname: function(){
+                let x=document.getElementById("demo");
+                x.innerHTML=this.firstname+ " "+this.lastname;
+            }
+        }
+        person.fullname();
+    </script>
+-->   
+</body>
+</html>

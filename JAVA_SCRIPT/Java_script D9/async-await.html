@@ -1,0 +1,109 @@
+<!--
+"async and await make promises easier to write"
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+
+The keyword async before a function makes the function return a promise:
+-->
+
+<!---
+<h1>JavaScript async / await</h1>
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+async function myFunction() {return "Hello";}
+
+myFunction().then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);</script>
+-->
+<!--
+Await:
+The await keyword can only be used inside an async function.
+
+The await keyword makes the function pause the execution and
+ wait for a resolved promise before it continues:
+-->
+
+<!---
+<h1>JavaScript async / await</h1>
+<h2 id="demo"></h2>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("Hello Everyone !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+-->
+
+<!--
+<h1>JavaScript async / await</h1>
+<h2 id="demo"></h2>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    resolve("Hello Everyone !!");
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+-->
+<!--
+<h1>JavaScript async / await</h1>
+<h2 id="demo"></h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {resolve("Hello Everyone !!");}, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+-->
+<!--
+<h1>JavaScript async / await</h1>
+<p id="demo"></p>
+
+<script>
+async function getFile() {
+  let myPromise = new Promise(function(resolve) {
+    let req = new XMLHttpRequest();
+    req.open('GET', "mycar.html");
+    req.onload = function() {
+      if (req.status == 200) {
+        resolve(req.response);
+      } else {
+        resolve("File not Found");
+      }
+    };
+    req.send();
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+}
+
+getFile();
+</script>
+-->
+
+</body>
+</html>

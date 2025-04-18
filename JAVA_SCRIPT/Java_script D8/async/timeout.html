@@ -1,0 +1,21 @@
+<!--
+When  using js function setTimeout() you can specify a callback func to be executed on time-out
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout</title>
+</head>
+<body>
+    <h1>setTimeout()</h1>
+    <p id="demo"></p>
+    <script>
+        setTimeout(myfunc,5000);//5000miliseconds => 5seconds
+        function myfunc(){
+            document.getElementById('demo').innerHTML="I Love RCB !!!!!";
+        }
+    </script>
+</body>
+</html>

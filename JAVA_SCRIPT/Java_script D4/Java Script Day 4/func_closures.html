@@ -1,0 +1,55 @@
+<!--
+global variables can be made local(private) with clousres.
+closures make it poosible for a function to have 'private' variable.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="stylesheet" href="/JAVA_SCRIPT/Java_script D4/Java Script Day 4/func_closuer.js">
+</head>
+<body>
+    <p id="demo"></p>
+    <!---
+    <h1>
+        Java Script Local Scope
+    </h1>
+    <p>access local variable defined inside the function</p>
+    <script>
+        document.getElementById('demo').innerHTML=myfunc();
+        function myfunc(){
+            let a=4; //local variable
+            return a*a;
+        }
+    </script>
+-->
+    <!---
+    <h1>Global variable</h1>
+    <script>
+        let a=4; //global variable
+        document.getElementById('demo').innerHTML=myfunc();
+        function myfunc(){
+            return a*a;
+        }
+    </script>
+-->
+    <!----->
+    <h1>Counter dilema</h1>
+    <p>Counting with global variable</p>
+    <script>
+        //initate the counter
+        let counter=0;
+        //function to increament the counter
+        function add(){
+            counter+=1;
+        }
+        add();
+        add();
+        add();
+        document.getElementById('demo').innerHTML="The Counter is: "+counter;
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!--
+Protection Methods:
+//prevent adding object properties
+object.preventExtensions(object)
+
+//returns true if properties can be added to an object
+object.isExtensible(object)
+
+//prevent adding and deleting object properties
+object.seal(object)
+
+//returns true if object is sealed
+object.isSealed(object)
+
+//prevents any changes to an object
+object.freeze(object)
+
+//returns true iff object is frozen
+object.isFrozen(object)
+-->
+<!DOCTYPE html>
+<html>
+  <link rel="javascript" href="/Java_script D6/java_script D6/protect.js">
+<body>
+<h1>JavaScript Objects</h1>
+<h2>The Object.preventExtensions() Method</h2>
+
+<p id="demo"></p>
+<!---
+<script>
+"use strict"
+// Create Object
+const person = {firstName:"John", lastName:"Doe"};
+
+// Prevent Extensions
+Object.preventExtensions(person)
+
+// Test Error
+let text = "";
+try {
+  person.nationality = "English";
+}
+catch (err) {
+  text = err;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+-->
+<!---
+<script>
+// Create Object
+const person = {firstName:"John", lastName:"Doe"};
+
+// Prevent Extensions
+Object.preventExtensions(person);
+
+// This will return false
+let answer =  Object.isExtensible(person)
+document.getElementById("demo").innerHTML =answer;
+</script>
+-->
+<!--
+<script>
+// Create Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Prevent Extensions
+Object.preventExtensions(fruits);
+
+// This will return false
+let answer = Object.isExtensible(fruits);
+document.getElementById("demo").innerHTML = answer;
+</script>
+-->
+<!--JavaScript Object.seal()
+The Object.seal() method prevents additions or deletions of new properties.
+
+The Object.seal() method makes existing properties non-configurable.
+
+The Object.isSealed() method can be used to check if an object is sealed.-->
+<!---
+<script>
+"use strict"
+// Create Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Seal Object
+Object.seal(person)
+
+// Test Error
+let text = "";
+try {
+  delete person.age;
+  text = Object.values(person);
+}
+catch (err) {
+  text = err;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+-->
+<!--
+<script>
+// Create Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Seal Array
+Object.seal(fruits);
+
+// This will return true
+let answer = Object.isSealed(fruits);
+document.getElementById("demo").innerHTML = answer;
+</script>
+-->
+<!---->
+<script>
+"use strict"
+// Create Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Freeze Object
+Object.freeze(person)
+
+// Test Error
+let text;
+try {
+  person.age = 51;
+  text = Object.values(person);
+}
+catch (err) {
+  text = err;
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+-->
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!--
+Property MAnagement Methods:
+//Adding or channging an objects properties
+object.defineProperty(object,property)
+
+//adding or changing objects properties
+object.defineProperty(object,descriptors)
+
+//accessing a property
+object.getOwnPropertyDescriptor(object,property)
+
+//Accessing a Properties
+object.getOwnPropertyDescriptor(object)
+
+//returns all properties as array
+object.getOwnPropertyNames(object)
+
+//accessing the prototype
+object.getPrototypeOf(object)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects Methods - Property Management Method</h1>
+    <p id="demo"></p>
+    <script>
+        /*
+        //create object
+        const person={firstName: "John",
+        lastName: "Doe"};
+        //define getter
+        Object.defineProperty(person,"fullname",{get:function(){return this.firstName+" "+this.lastName;}
+    });
+    //display fullname
+    document.getElementById('demo').innerHTML=person.fullname;
+    */
+        /**/
+        //create object
+        const person={
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            language:'GE'
+        };
+        //add property
+        Object.defineProperty(person,'language',{value:"EN"})
+
+        //display
+        //document.getElementById('demo').innerHTML=person.language;
+        document.getElementById('demo').innerHTML=Object.getOwnPropertyNames(person);
+      
+
+    </script>
+    
+</body>
+</html>

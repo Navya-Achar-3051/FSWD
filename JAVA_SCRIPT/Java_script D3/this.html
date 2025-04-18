@@ -1,0 +1,59 @@
+<!--
+this keyword refers to different objects depending on how it is used
+
+alone, 'this' refers to global object
+in function  in strict mode 'this' is 'undefined'
+in an event 'this' refers to element that recieved the event
+methods like call(),apply(),bind() 'this' is refered to any objects
+
+note:'this' is not a variable,it is a keywords,you cannot change value
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+    <!---
+    <h1>This with Global Object</h1>
+    <p>When a function is called without an owner object,the value of <b>This</b>
+    becomes global object</p>
+    <p id="demo"></p>
+    <script>
+        let x=myfunc();
+        function myfunc(){
+            return this;
+        }
+        document.getElementById('demo').innerHTML=x;
+    </script>
+-->
+    <!---
+    <h1>Invoking Function as a Method</h1>
+    <p id="demo"></p>
+    <script>
+        const myobj={
+            firstname:'John',
+            lastname:'jill',
+            fullname:function(){
+                return this.firstname+ " "+this.lastname;
+            }
+        }
+        document.getElementById('demo').innerHTML=myobj.fullname();
+    </script>
+-->
+    <!--
+    <h1>Invoking function with the constructor</h1>
+    <p id="demo"></p>
+    <script>
+        function myfunc(arg1,arg2){
+            this.firstname=arg1;
+            this.lastname=arg2;
+        }
+        const myobj= new myfunc('navya','manoj')
+        document.getElementById('demo').innerHTML=myobj.firstname;
+    </script>
+    -->
+</body>
+</html>

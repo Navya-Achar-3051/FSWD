@@ -1,0 +1,32 @@
+<!--
+ISO Dates - interantional standard representation of dates - yyyy-mm-dd
+
+ISO dates - without day - yyyy-mm
+
+ISO dates - only year - yyyy
+
+ISO date time - yyyy-mm-dd hh:mm:ss
+
+Long date - MMM DD yyyy
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <h1>Dates</h1>
+    <p id="demo"></p>
+    <script>
+        //const d=new Date("2025-04-03"); //complete
+        //const d=new Date("2025-04"); //only year and month
+        //const d=new Date("2025");//only year
+        //const d=new Date("2025-04-03T12:00:00Z")//with time
+        const d=new Date("MAR 25 2020")
+        document.getElementById('demo').innerHTML=d;
+    </script>
+    
+</body>
+</html>

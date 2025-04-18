@@ -1,0 +1,103 @@
+🟢 Easy Level (Basics) — 20 Questions
+What is JavaScript?
+
+What are the different data types in JavaScript?
+
+What is the difference between var, let, and const?
+
+What are primitive and non-primitive data types?
+
+What is hoisting in JavaScript?
+
+What is the difference between == and ===?
+
+What is null vs undefined?
+
+What are template literals?
+
+How do you declare a function in JavaScript?
+
+What is the difference between function declaration and function expression?
+
+What is the purpose of the typeof operator?
+
+How do you create an object in JavaScript?
+
+What is an array? How do you declare one?
+
+What is the use of Array.push() and Array.pop()?
+
+How do you loop through an array?
+
+What is the difference between for, forEach, and map?
+
+What are arrow functions?
+
+What is a callback function?
+
+What is event bubbling?
+
+What is the DOM?
+
+🟡 Intermediate Level — 20 Questions
+What is scope in JavaScript?
+
+What are closures and how do they work?
+
+What is the difference between synchronous and asynchronous code?
+
+What is the event loop in JavaScript?
+
+What are promises in JavaScript?
+
+What is async/await?
+
+Explain the concept of lexical scope.
+
+What is the use of this keyword in JavaScript?
+
+What are the different ways to bind this?
+
+What is the difference between call(), apply() and bind()?
+
+What are higher-order functions?
+
+What is object destructuring?
+
+What is spread operator and rest operator?
+
+What is JSON and how do you parse a JSON string?
+
+What is the difference between localStorage, sessionStorage, and cookies?
+
+How does JavaScript handle errors? (try...catch)
+
+What are template literals and tagged templates?
+
+How does setTimeout and setInterval work?
+
+How can you debounce or throttle a function?
+
+What is the difference between shallow copy and deep copy?
+
+🔴 Hard Level — 10 Questions
+What is a memory leak in JavaScript? How do you avoid it?
+
+How does garbage collection work in JavaScript?
+
+How does the JavaScript engine work under the hood (V8)?
+
+Explain prototypal inheritance.
+
+What are ES6 classes and how do they work?
+
+How do modules work in JavaScript? (import/export)
+
+How can you implement a custom event system in JavaScript?
+
+How would you polyfill Promise or Array.prototype.map()?
+
+Explain how debounce or throttle can be implemented from scratch.
+
+What are WeakMap and WeakSet and how do they differ from Map and Set?
+

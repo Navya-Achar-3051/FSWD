@@ -1,0 +1,50 @@
+<!--
+const variable - cannot be redeclared, cannot be reassigned, have block scope
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const variable</title>
+</head>
+<body>
+    <h2>Const Variable</h2>
+    <p id="demo"></p>
+    <!----
+    <script>
+        try{
+            const pi=3.14159
+            pi=3.14
+        }
+        catch (err){
+            document.getElementById('demo').innerHTML=err;
+        }
+    </script>
+-->
+
+<!---->
+    <script>
+        /*
+        can Not:
+        reassign the const value
+        reassign the const array
+        reassign a const object
+
+        Can Do:
+        change elements of const array
+        change the properties of const object
+        */
+        //create a array
+        const cars=['Ford','Volvo','Kia'];
+        //change elemnent
+        cars[0]='Tata';
+        //Add element
+        cars.push('BMW');
+        //display
+        document.getElementById('demo').innerHTML=cars;
+    </script>
+
+    
+</body>
+</html>

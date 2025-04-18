@@ -1,0 +1,46 @@
+<!--
+8 types of JS data types:
+ string 
+ number
+ Bigint
+ boolean
+ undefined
+ null
+ symbol
+ object
+
+ objects data type can contain both built in objects or user defined objects
+ built-in objects:objects,arrays,dates,maps,sets,intarray,floatarray,promises...more
+
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+ </head>
+ <body>
+    <h1>Java Script Data Types</h1>
+    <p id="demo"></p>
+    <h1>when adding number with string , java script will treat it has a string</h1>
+    <!----
+    <script>
+        let x='volvo'+ 16+5;
+        document.getElementById('demo').innerHTML=x
+    </script>
+-->
+
+<!----->
+    <script>
+        const person={
+            firstname:"John",
+            lastname:"duo",
+            age:30,
+            eyecolor:'blue'
+        };
+        document.getElementById('demo').innerHTML= person.firstname + ' is '+ person.age +' years old .';
+    </script>
+
+ </body>
+ </html>

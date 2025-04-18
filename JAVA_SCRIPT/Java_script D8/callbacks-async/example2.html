@@ -1,0 +1,32 @@
+<!---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call back functions</h1>
+    <p id="demo"></p>
+    <script>
+        //create array
+        const mynumbers=[4,1,-20,7,-5,9,-6];
+        //call removeneg with callack
+        const posnum=removeNeg(mynumbers,(x)=>x>=0);
+        //display result
+        document.getElementById('demo').innerHTML=posnum;
+
+        //remove negative number
+        function removeNeg(numbers,callack){
+            const arr=[];
+            for (const x of numbers){
+                if (callack(x)){
+                    arr.push(x);
+                }
+            }
+            return arr;
+        }
+    </script>
+</body>
+</html>

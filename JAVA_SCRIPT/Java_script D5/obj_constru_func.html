@@ -1,0 +1,30 @@
+<!--
+some times we need to create many objects of the same type.
+to create an object type we use an objects constructor function.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Object Constructor Function</h1>
+    <p id="demo"></p>
+    <script>
+        //constructor function for person object
+        function person(first,last,age,loc){
+            this.firstname=first;
+            this.lastname=last;
+            this.age=age;
+            this.loc=loc;
+            this.nationality='Indian'//default values
+        }
+        const father=new person('Harish','Hegde',45,'Bengaluru');
+        const mother=new person('Nitha','Hegde',40,'Mangaluru');
+        document.getElementById('demo').innerHTML="My father name is "+father.firstname+ " " +father.lastname+ " is " + father.age +" years old " + " and he is from "+father.loc + " , My Mother name  is "+mother.firstname+ " " +mother.lastname+ " is " + mother.age +" years old " + " and she is from "+mother.loc + " and both are " + father.nationality;
+    </script>
+    
+</body>
+</html>
