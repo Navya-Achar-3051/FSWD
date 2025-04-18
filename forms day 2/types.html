@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TYPES OF INPUT</title>
+</head>
+<body>
+    <H1>INPUT TYPES IN FORMS</H1>
+    <form>
+        <label for="username">USERNAME: </label>
+        <input type="text" name="username" id="username"><br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="phone">Phone: </label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" required><br>
+        <small>format:1234-56-7890</small><br><br>
+        <br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="pwd" id="pwd"><br>
+        <br>
+        <label for="birth">Birthday(date and time): </label>
+        <input type="datetime-local" name="birth" id="birth"><br>
+        <br>
+        <label for="joining">week: </label>
+        <input type="week" name="joining" id="joining"><br>
+        <br>
+        <label for="joining">month: </label>
+        <input type="month" name="joining" id="joining"><br>
+        <br>
+        <label for="time">time: </label>
+        <input type="time" name="time" id="time"><br>
+        <br>
+        <label for="qty">select the product quantity(1 to 10): </label>
+        <input type="number" name="qty" id="qty" min="1" max="10"><br>
+        <br>
+        <input type="radio" id="loc" name="Loc">
+        <label for="loc">Bangalore</label><br>
+        <input type="radio" id="loc" name="Loc">
+        <label for="loc">Chennai</label><br>
+        <input type="radio" id="loc" name="Loc">
+        <label for="loc">Mumbai</label><br>
+        <br>
+        <input type="checkbox" id="dishes" name="dishes">
+        <label for="dishes">South-Indian</label>
+        <input type="checkbox" id="dishes" name="dishes">
+        <label for="dishes">North-Indian</label>
+        <input type="checkbox" id="dishes" name="dishes">
+        <label for="dishes">Chinese</label><br>
+        <br>
+        <label for="favcolor">Select the Color: </label>
+        <input type="color" name="color" id="favcolor"><br>
+        <br>
+        <label for="file">select the file: </label>
+        <input type="file" id="file" name="file"><br>
+        <br>
+        <input type="image" src="/forms day 2/smile.png" alt="smile" width="48" height="48"> <br>
+        <br>
+        <input type="button" onclick="alert('ENTER ALL THE FIELDS CORRECTLY!!!')" value="Click Me"><br>
+        <br>
+        <input type="submit" value="Submit" name="submit">
+        <input type="reset" value="Reset" name="reset">
+    </form>
+    
+</body>
+</html>
