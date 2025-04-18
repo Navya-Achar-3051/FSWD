@@ -1,0 +1,54 @@
+<!--SELECTORS
+selectors are used to find the html element/tag that u wnted to style
+5 types of selectors:
+1.SIMPLE SELECTOR-selecting elements based on class,id,tag name
+2.COMBINATOR SELECTOR-selects elements based on specific relationship between them
+3.PSEUDO CLASS SELECTOR-selects ele based on certain state
+4.PSEUDO ELEMENT SELECTOR-selects and style a part of ele
+5.ATTRIBUTE SELECTOR-SELECTS ELEMNETS BASED ON THEIR ATTRIBUTE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selector</title>
+    <style>
+        p{
+            text-align: center;
+            color: blueviolet;
+        }
+        #p1{
+            background-color: bisque;
+        }
+        .main{
+            text-align: center;
+            background-color: burlywood;
+            border: 2px solid brown;
+            color: black;
+            font-size: 3rem;
+        }
+        .main p{
+            color: black;
+            font-size: 2rem;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Selector</h1>
+    <p>styling class , id, tags by their names</p>
+    <p>Every paragraph will be affected</p>
+    <p id="p1">this will also get affected</p>
+    <p>i also will be affected</p>
+    <div class="main">
+        <h1 id="h1">Navya</h1>
+        <p>i am a coperate it trainer</p>
+    </div>
+    
+</body>
+</html>

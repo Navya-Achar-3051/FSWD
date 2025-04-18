@@ -1,0 +1,44 @@
+<!--
+CSS Flexbox-is short name for the flexible box layout module
+it helps to arrange items in rows or columns
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .flex{
+            display: flex;
+            height: 400px;
+            align-items: normal;
+            background-color: lightblue;
+
+        }
+        .flex>div{
+            background-color: #f1f1f1;
+            color: black;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--align-items => center,flex-start,flex-end,stretch, baseline, normal-->
+    <h1>Flex Container</h1>
+    <div class="flex">
+        <div><h1>1</h1></div>
+        <div><h6>2</h6></div>
+        <div><h1>3</h1></div>
+        <div><h5>4</h5></div>
+    </div>  
+    <p>the align items property is used to align the flex items when they do not use all
+        avaiable space on the cross axis(vertically)
+    </p>  
+</body>
+</html>

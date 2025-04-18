@@ -1,0 +1,76 @@
+<!--
+radial gradient: is defined by its center
+syantx:
+bg-img:radial-gradient(shape,size at position,start color,...last-color);
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        /*
+        #grad1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        */
+        /*
+        #grad1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(red 5%,yellow 15%,green 60%);
+        }
+        */
+        /*
+        #grad1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(circle,red,yellow,green);
+        }
+        */
+        #grad1{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(Closest-side at 60% 55%,red,yellow,green);
+        }
+        #grad2{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(Farthest-side at 60% 55%,red,yellow,green);
+        }
+        #grad3{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(Closest-corner at 60% 55%,red,yellow,green);
+        }
+        #grad4{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            background-image: radial-gradient(Farthest-corner at 60% 55%,red,yellow,green);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Radial Gradient-evenly placed colors</h1>
+    <h2>Closest-side</h2>
+    <div id="grad1"></div>
+    <h2>Farthest-side</h2>
+    <div id="grad2"></div>
+    <h2>Closest-corner</h2>
+    <div id="grad3"></div>
+    <h2>Farthest-corner</h2>
+    <div id="grad4"></div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-Images</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-container{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Images side by side</h2>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="/css/icons,display,overflow,float/img1.jpg" alt="nature" width="100%">
+        </div>
+        <div class="img-container">
+            <img src="/css/icons,display,overflow,float/img2.jpg" alt="nature" width="100%">
+        </div>
+        <div class="img-container">
+            <img src="/css/icons,display,overflow,float/img3.jpg" alt="nature" width="100%">
+        </div>
+    </div>
+    <p>this is how float images work look like</p>
+    
+</body>
+</html>

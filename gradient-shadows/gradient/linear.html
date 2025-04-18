@@ -1,0 +1,45 @@
+<!--
+Gradient lest you display smooth transistion between two or more specified colors
+3 types gradient:
+1.Linear
+2.Radial
+3.conic
+
+linear Gradient:you must define at least two color stops.
+synatx:
+background-image:linear-gradient(direction,color stop1,color stop2....);
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        /*
+        #grad1{
+            height: 400px;
+            background-color: red;
+            background-image: linear-gradient(to Bottom right,red, yellow);
+        }
+            */
+            #grad1{
+            height: 100px;
+            background-color: red;
+            background-image: repeating-linear-gradient(red, yellow,black);
+        }
+        #grad2{
+            height: 100px;
+            background-color: red;
+            background-image: repeating-linear-gradient(red, yellow,black);
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    
+    
+</body>
+</html>

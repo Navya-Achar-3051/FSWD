@@ -1,0 +1,89 @@
+<!--
+flex-items => order,flex-grow,flex-basis,flex-shrink,flex align-self
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Items</title>
+    <style>
+        .flex{
+            display: flex;
+            align-items: stretch;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+        .flex>div{
+            background-color: lightblue;
+            color: black;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!---
+    <h1>Flex-Items:order=>sort items as u like</h1>
+    <div class="flex">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div style="flex-grow: 8;">3</div> 
+    </div>
+-->
+    <!--Flex-Shrink-->
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    
+
+      <!--flex basic
+      <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+      </div>
+      -->
+
+    
+
+      <!--not growable , shrinkable
+      <h1>The flex Property</h1>
+
+<p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+
+<div class="flex">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex: 0 0 200px">3</div>
+  <div>4</div>
+</div>
+-->
+
+<!--align-self
+<div class="flex">
+    <div>1</div>
+    <div>2</div>
+    <div style="align-self: center;">3</div>
+    <div>4</div>
+  </div>
+  
+  <p>The align-self property overrides the align-items property of the container.</p>
+
+-->  
+    
+</body>
+</html>

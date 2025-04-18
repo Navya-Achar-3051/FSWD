@@ -1,0 +1,45 @@
+<!--
+grid-template-columns property defines the number of columns in your grid layout,it can define the width of each column
+fr(fraction) unit can be used when defining grids like any other css length such as % px rem
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 50px 60px 80px 50px;
+            place-content: end space-around;/*place-content use of both align content and justify-content*/
+            grid-template-rows: 80px 100px 100px;
+            /*justify-content: end; start,end,center,space-around,space-between,space-evenly-same for align content*/
+            gap: 10px;
+            background-color: dodgerblue;
+            padding: 10px;
+        }
+        .container>div{
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <p>direct child of the div becomes grid automatically</p>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    
+</body>
+</html>

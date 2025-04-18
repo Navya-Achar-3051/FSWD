@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selectors</title>
+    <style>
+        a.highlight:hover{
+            color: rgb(222, 98, 32);
+            font-size: 30px;
+        }
+        p{
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        div:hover p{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>PCS</h1>
+    <p>this is a type of selectors</p>
+    <p><a class="highlight" href="https://www.primevideo.com/region/eu/offers/nonprimehomepage/ref=dv_web_force_root">Amazon-Prime</a></p>
+    <p><a class="highlight" href="https://www.netflix.com/in/">Netflix</a></p>
+    <br>
+    <div>if the mouse comes over this
+        <p>HEy i am here !!!!!!!!!</p>
+    </div>
+    
+</body>
+</html>

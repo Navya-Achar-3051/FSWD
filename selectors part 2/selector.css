@@ -1,0 +1,52 @@
+/*
+h1:first-child{
+    color:blue
+}
+    */
+
+/* multiple pesudo class selector
+p i:first-child{
+    color: brown;
+    font-size: 20px;
+}
+    */
+/*
+    p:first-child i{
+        color: brown;
+    }
+*/
+/*
+p::first-line{
+    color: brown;
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    color: blue;
+    font-size: 70px;
+}
+*/
+/*
+h1::after{
+    content: url(smile.gif);   
+    width: auto;
+    height: auto;
+    max-width: fit-content;
+}
+p{
+    font-size: xx-large;
+    text-align: center;
+}
+    */
+/*
+::marker{
+    color: red;
+    font-size: 40px;
+}*/
+::selection{
+    color: red;
+    background: yellow;
+}
+
+
+
